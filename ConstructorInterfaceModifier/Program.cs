@@ -10,7 +10,12 @@ namespace ConstructorInterfaceModifier
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Constructor, Iterface and Access Modifier.");
+            Square square = new Square(5.0);
+            Console.WriteLine("Area of the square: " + square.CalculateArea());
+
+            Circle circle = new Circle(3.0);
+            Console.WriteLine("Area of the circle: " + circle.CalculateArea());
+            Console.ReadKey();
         }
     }
 }
